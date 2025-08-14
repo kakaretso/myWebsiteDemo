@@ -1,0 +1,99 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #004085;
+    color: white;
+}
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Sticky Navigation */
+nav {
+    background-color: #0069d9;
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+}
+nav p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0.5rem;
+}
+nav ul li a {
+    color: white;
+    background-color: #0056b3;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #003d80;
+}
+
+/* Sections */
+main {
+    padding: 1rem;
+    max-width: 900px;
+    margin: auto;
+}
+section {
+    background: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+section h2 {
+    color: #004085;
+    margin-bottom: 0.5rem;
+}
+section ul {
+    margin-left: 1rem;
+    list-style: disc;
+}
+
+/* Footer */
+footer {
+    background-color: #004085;
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+    margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
